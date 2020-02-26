@@ -28,7 +28,7 @@ class TestOne(BaseClass):
                 checkoutpage.getCardFooter()[i].click()
 
         self.driver.find_element_by_css_selector("a[class*='btn-primary']").click()
-
+        log.info("change to code")
         confirmpage = checkoutpage.checkOutItems()
         log.info("Entering country name as ind")
         self.driver.find_element_by_id("country").send_keys("ind")
